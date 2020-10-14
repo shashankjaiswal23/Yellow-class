@@ -27,7 +27,7 @@ function Images({ url, key, image }) {
                  </div>
   
             </Modal>
-             <img onClick={e=>setOpen(true)} src={url} key={key} alt={key} />           
+            <img onClick={e=>setOpen(true)} src={url} key={key} alt={key} />           
         </div>
     )
 }

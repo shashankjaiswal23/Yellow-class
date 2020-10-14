@@ -49,12 +49,20 @@ function App() {
       >
               <div className="modal">
                 <div className="close__modal">
-                  <button onClick={e=>setOpen(false)}>X</button>   
+                  <button onClick={e=>setOpen(false)}><h1>X</h1></button>   
                 </div>
                 <div className="modal__row">
                   
-                  <SkipPreviousIcon onClick={() => setCount(count - 1)} />
-                  <SkipNextIcon onClick={()=>setCount(count+1)}/>
+                  <SkipPreviousIcon className="button__left" onClick={() => {
+                    if (count > 1)
+                    { setCount(count - 1) }
+                    else
+                    { alert("Please click the right button") }
+                  }} />
+                  <SkipNextIcon className="button__right" onClick={() => {
+                    if (count < image.length - 1) { setCount(count + 1) } else {
+                    alert('please scroll')
+                  }}}/>
                   <img src={image[count].urls.regular}/>           
             
           </div>

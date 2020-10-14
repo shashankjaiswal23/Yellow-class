@@ -5,11 +5,12 @@
 }
 .ldio-12f6g7aliyi div {
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 60px;
+  height: 60px;
   border: 20px solid #93dbe9;
   border-top-color: transparent;
   border-radius: 50%;
+  align-self: center;
 }
 .ldio-12f6g7aliyi div {
   animation: ldio-12f6g7aliyi 1s linear infinite;
